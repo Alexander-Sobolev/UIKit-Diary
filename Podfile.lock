@@ -1,0 +1,30 @@
+PODS:
+  - FSCalendar (2.8.2)
+  - QVRWeekView (0.14.1)
+  - Realm (10.7.2):
+    - Realm/Headers (= 10.7.2)
+  - Realm/Headers (10.7.2)
+  - RealmSwift (10.7.2):
+    - Realm (= 10.7.2)
+
+DEPENDENCIES:
+  - FSCalendar
+  - QVRWeekView
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - FSCalendar
+    - QVRWeekView
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  QVRWeekView: 8b68e870e17bd970f44a5a2017e0bd031c825af3
+  Realm: e523da9ade306c5ae87e85dc09fdef148d3e1cc1
+  RealmSwift: 4f6758c3adbdcc87f7b7777107226532a077f61c
+
+PODFILE CHECKSUM: 5bf65f21f28d26213c5a50bf38d369664228d859
+
+COCOAPODS: 1.10.1
