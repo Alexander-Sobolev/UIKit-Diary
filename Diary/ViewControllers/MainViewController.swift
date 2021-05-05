@@ -47,14 +47,13 @@ class MainViewController: UIViewController {
         weekView.passedWeekendDayViewColor = .white
         weekView.sideBarWidth = 40
         weekView.dayViewHourIndicatorColor = .blue
-        
     }
     // Метод синхронизирует выбранную дату в calendear и weekView
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         currentDate = date
         selectDate(date: currentDate)
     }
-    // Метод меняет дату на calendear при листании страниц weekView
+    // Метод меняет дату в calendear при листании страниц weekView
     func activeDayChanged(in weekView: WeekView, to date: Date) {
         currentDate = date
         calendear.select(date)
@@ -68,11 +67,9 @@ class MainViewController: UIViewController {
 }
     // Добавляю протоколы
 extension MainViewController: FSCalendarDelegate, FSCalendarDataSource, WeekViewDelegate {
-    
     func eventLoadRequest(in weekView: WeekView, between startDate: Date, and endDate: Date) {
-        //
+        // Данный метод не использую еще
     }
-    
     // Метод вызывается при длительном нажатии на столбец weekView. Использую чтобы инициировать создание события
     func didLongPressDayView(in weekView: WeekView, atDate date: Date) {
         // Создаю Alert для выбора внешнего вида события
@@ -126,17 +123,20 @@ extension MainViewController: FSCalendarDelegate, FSCalendarDataSource, WeekView
         }))
 
         self.present(alert, animated: true, completion: nil)
-
     }
-    // Данный метод по задумке разработчиков фреймворка QVRWeekView используется чтобы запрашивать редактирование или удаление события. Я приспособил его для перехода на ViewController на котором добавляем события.
+    // Данный метод didTapEvent по задумке разработчиков фреймворка QVRWeekView используется чтобы запрашивать редактирование или удаление события. Я приспособил его для перехода на ViewController на котором добавляем события
     func didTapEvent(in weekView: WeekView, withId eventId: String) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "DescriptionVC") else { return }
-        self.present(vc, animated: true, completion: nil)
-}
+        if #available(iOS 13.0, *) {
+            guard let vc = storyboard?.instantiateViewController(identifier: "DescriptionVC") else { return }
+            self.present(vc, animated: true, completion: nil)
+            } else {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "DescriptionVC") as! DescriptionViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+            }
     // Использую для возврата со второго View и одновременного сохранения событий
+        }
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
         guard let descroptionVC = segue.source as? DescriptionViewController else { return }
         descroptionVC.saveDescription()
     }
 }
-

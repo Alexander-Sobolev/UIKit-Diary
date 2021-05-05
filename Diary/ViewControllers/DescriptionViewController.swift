@@ -79,6 +79,7 @@ extension DescriptionViewController: UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    // Если заполнены оба поля name и descript кнопка buttomSave доступна
     @objc private func textFieldChanged() {
         if name.text!.isEmpty == false && descript.text?.isEmpty == false {
             buttomSave.isEnabled = true

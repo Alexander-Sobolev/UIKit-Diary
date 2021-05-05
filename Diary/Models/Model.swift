@@ -7,7 +7,7 @@
 
 import Foundation
 import RealmSwift
-
+// Согласно документации с сайта realm.io создаю модель
 class Model: Object {
     
     @objc dynamic var id : String?
