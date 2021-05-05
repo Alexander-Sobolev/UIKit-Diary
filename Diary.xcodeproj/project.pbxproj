@@ -74,9 +74,9 @@
 		B420C7BA263FD59A002C1557 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				B420C7B3263FD588002C1557 /* Screenshot03.png */,
-				B420C7B4263FD589002C1557 /* Screenshot02.png */,
 				B420C7B5263FD589002C1557 /* Scrieenshot01.png */,
+				B420C7B4263FD589002C1557 /* Screenshot02.png */,
+				B420C7B3263FD588002C1557 /* Screenshot03.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";

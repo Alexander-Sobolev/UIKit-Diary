@@ -63,7 +63,6 @@ class MainViewController: UIViewController {
         calendear.select(date)
         weekView.showDay(withDate: date)
     }
-
 }
     // Добавляю протоколы
 extension MainViewController: FSCalendarDelegate, FSCalendarDataSource, WeekViewDelegate {
