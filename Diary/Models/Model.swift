@@ -5,7 +5,7 @@
 //  Created by Alexander Sobolev on 02.05.2021.
 //
 
-import Foundation
+//import Foundation
 import RealmSwift
 // Согласно документации с сайта realm.io создаю модель
 class Model: Object {
