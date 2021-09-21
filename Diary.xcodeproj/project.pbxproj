@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		86296455CC4F22A80A3263EA /* Pods_Diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631DBA0F0BE8538E07715057 /* Pods_Diary.framework */; };
+		B40FD9F526FA4A7A00259210 /* Screen3.png in Resources */ = {isa = PBXBuildFile; fileRef = B40FD9F426FA4A7A00259210 /* Screen3.png */; };
+		B40FD9F826FA4A8500259210 /* Screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = B40FD9F626FA4A8500259210 /* Screen1.png */; };
+		B40FD9F926FA4A8500259210 /* Screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = B40FD9F726FA4A8500259210 /* Screen2.png */; };
 		B41F423D26738F3B005A9518 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B41F423C26738F3B005A9518 /* .gitignore */; };
-		B420C7B6263FD589002C1557 /* Screenshot03.png in Resources */ = {isa = PBXBuildFile; fileRef = B420C7B3263FD588002C1557 /* Screenshot03.png */; };
-		B420C7B7263FD589002C1557 /* Screenshot02.png in Resources */ = {isa = PBXBuildFile; fileRef = B420C7B4263FD589002C1557 /* Screenshot02.png */; };
-		B420C7B8263FD589002C1557 /* Scrieenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = B420C7B5263FD589002C1557 /* Scrieenshot01.png */; };
 		B43BEC66263EBE7F00671A70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43BEC65263EBE7F00671A70 /* AppDelegate.swift */; };
 		B43BEC68263EBE7F00671A70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43BEC67263EBE7F00671A70 /* SceneDelegate.swift */; };
 		B43BEC6A263EBE7F00671A70 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43BEC69263EBE7F00671A70 /* MainViewController.swift */; };
@@ -32,10 +32,10 @@
 		631DBA0F0BE8538E07715057 /* Pods_Diary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DBFEC03B6B15018039F70AC /* Pods-Diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diary.release.xcconfig"; path = "Target Support Files/Pods-Diary/Pods-Diary.release.xcconfig"; sourceTree = "<group>"; };
 		7C6103E50C932AFD63CAE8BA /* Pods-Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diary.debug.xcconfig"; path = "Target Support Files/Pods-Diary/Pods-Diary.debug.xcconfig"; sourceTree = "<group>"; };
+		B40FD9F426FA4A7A00259210 /* Screen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen3.png; sourceTree = "<group>"; };
+		B40FD9F626FA4A8500259210 /* Screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen1.png; sourceTree = "<group>"; };
+		B40FD9F726FA4A8500259210 /* Screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen2.png; sourceTree = "<group>"; };
 		B41F423C26738F3B005A9518 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		B420C7B3263FD588002C1557 /* Screenshot03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot03.png; sourceTree = "<group>"; };
-		B420C7B4263FD589002C1557 /* Screenshot02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot02.png; sourceTree = "<group>"; };
-		B420C7B5263FD589002C1557 /* Scrieenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scrieenshot01.png; sourceTree = "<group>"; };
 		B43BEC62263EBE7F00671A70 /* Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43BEC65263EBE7F00671A70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B43BEC67263EBE7F00671A70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,9 +86,9 @@
 		B420C7BA263FD59A002C1557 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				B420C7B5263FD589002C1557 /* Scrieenshot01.png */,
-				B420C7B4263FD589002C1557 /* Screenshot02.png */,
-				B420C7B3263FD588002C1557 /* Screenshot03.png */,
+				B40FD9F626FA4A8500259210 /* Screen1.png */,
+				B40FD9F726FA4A8500259210 /* Screen2.png */,
+				B40FD9F426FA4A7A00259210 /* Screen3.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -234,12 +234,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B420C7B8263FD589002C1557 /* Scrieenshot01.png in Resources */,
+				B40FD9F526FA4A7A00259210 /* Screen3.png in Resources */,
 				B41F423D26738F3B005A9518 /* .gitignore in Resources */,
-				B420C7B6263FD589002C1557 /* Screenshot03.png in Resources */,
 				B43BEC72263EBE8000671A70 /* LaunchScreen.storyboard in Resources */,
 				B43BEC6F263EBE8000671A70 /* Assets.xcassets in Resources */,
-				B420C7B7263FD589002C1557 /* Screenshot02.png in Resources */,
+				B40FD9F826FA4A8500259210 /* Screen1.png in Resources */,
+				B40FD9F926FA4A8500259210 /* Screen2.png in Resources */,
 				B43BEC6D263EBE7F00671A70 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,8 @@ import Foundation
 
 class JsonManager {
     // В CodeReview указанно что - Сервисный слой не реализован. Не реализован парсинг данных типа JSON. Не до конца понял что именно нужно поэтому создал отдельный менеджер где есть GET запрос. Сюда можно добавить и POST запросы отдельными функциями и другой функционал. Просто я не совсем понял что куда или откуда парсить.
-    static func getRequest(url: URL) {
+    static func getRequest(url: String) {
+        guard let url = URL(string: url) else { return }
         let session = URLSession.shared
         session.dataTask(with: url) { (data, response, error) in
         guard let response = response, let data = data else { return }
